@@ -30,9 +30,23 @@ img{
     height: 100px;
 }
 /* section */
-.inner1 img:hover{
+.inner1:hover img{
+    opacity: 50%;
     transform: scale(1.1);
+    transition: ease 1.5s;
+}
+.inner1:hover .harga1{
+    opacity: 100%;
     transition: ease 1s;
+    transition-delay: 0.5s;
+}
+.harga1{
+    text-align: center;
+    position: absolute;
+    opacity: 0%;
+    top: 30%;
+    left: 25%;
+    right: 25%;
 }
 .container-fluid{
     color: white;
@@ -51,8 +65,40 @@ img{
     text-align: center;
     color: white;
     font-size: 30px;
+    margin-top: 50px;
 }
 .bottom-50{
     margin-bottom: 50px;
     object-fit: cover;
+}
+.cover{
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+}
+.cate img{
+    position: relative;
+}
+.harga{
+    text-align: center;
+    position: absolute;
+    opacity: 0%;
+    top: 35%;
+    left: 25%;
+    right: 25%;
+}
+.cate:hover img{
+    opacity: 50%;
+    transition: ease 1s;
+}
+.cate:hover .harga{
+    opacity: 100%;
+    transition: ease 1s;
+    transition-delay: 0.5s;
+}
+.cate img:hover .harga{
+    display: block;
+}
+span, h5, p{
+    pointer-events: none;
 }
