@@ -33,11 +33,11 @@ img{
 .inner1:hover img{
     opacity: 50%;
     transform: scale(1.1);
-    transition: ease 1.5s;
+    transition: ease 0.5s;
 }
 .inner1:hover .harga1{
     opacity: 100%;
-    transition: ease 1s;
+    transition: ease 0.5s;
     transition-delay: 0.5s;
 }
 .harga1{
@@ -45,6 +45,7 @@ img{
     position: absolute;
     opacity: 0%;
     top: 30%;
+    bottom: 25%;
     left: 25%;
     right: 25%;
 }
@@ -57,7 +58,7 @@ img{
 @media screen and (max-width: 992px){
     .inner1 img:hover{
         transform: scale(0.95);
-        transition: ease 1s;
+        transition: ease 0.5s;
     }
 }
 /* categories */
@@ -84,21 +85,41 @@ img{
     position: absolute;
     opacity: 0%;
     top: 35%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+}
+.harga2{
+    text-align: center;
+    position: absolute;
+    opacity: 0%;
+    top: 40%;
+    bottom: 25%;
     left: 25%;
     right: 25%;
 }
 .cate:hover img{
     opacity: 50%;
-    transition: ease 1s;
+    transition: ease 0.5s;
 }
 .cate:hover .harga{
     opacity: 100%;
-    transition: ease 1s;
-    transition-delay: 0.5s;
+    transition: ease 0.5s;
+    transition-delay: 0.25s;
 }
-.cate img:hover .harga{
-    display: block;
+.cate:hover .harga2{
+    opacity: 100%;
+    transition: ease 0.5s;
+    transition-delay: 0.25s;
 }
 span, h5, p{
     pointer-events: none;
+}
+@media screen and (max-width: 450px){
+    .harga{
+        top: 20%;
+    }
+    .harga2{
+        top: 35;
+    }
 }
