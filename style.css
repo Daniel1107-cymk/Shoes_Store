@@ -262,4 +262,37 @@ h5, p{
 .product a{
     color: white;
 }
+.bgpro{
+    text-align: center;
+    font-size: 20px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    border-radius: 20px;
+    margin: 10px 15px 0 15px;
+}
+.bgpro img{
+    border-radius: 20px;
+    padding: 10px 10px 10px 0;
+}
+.judul-pro{
+    font-size: 30px;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-left{
+    text-align: justify;
+}
+.btn{
+    color: white;
+    border: 1px solid white;
+}
+.btn:hover{
+    color: grey;
+}
+.bottom20{
+    margin-bottom: 20px;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
 /* product end */
